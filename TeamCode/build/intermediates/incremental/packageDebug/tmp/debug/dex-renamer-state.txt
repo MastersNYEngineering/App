@@ -1,0 +1,4 @@
+#Sun Jan 20 09:36:17 EST 2019
+base.0=/Users/bolt/git/robotics/App/TeamCode/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

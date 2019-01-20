@@ -175,7 +175,7 @@ public class NewSquareDrive extends OpMode {
     }
 
     boolean arm_func_bool = false;
-    gvoid lock_arm_func() {
+    void lock_arm_func() {
         double current_position = lock_arm.getPosition();
         telemetry.addData("ARM LOCK POSITION", current_position);
         if (gamepad1.y) {
