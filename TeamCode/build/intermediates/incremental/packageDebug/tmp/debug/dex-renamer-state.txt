@@ -1,0 +1,4 @@
+#Sun Jan 20 09:43:07 EST 2019
+base.0=/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/TeamCode/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+path.0=classes.dex

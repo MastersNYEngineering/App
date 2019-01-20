@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/drawable/button_shape.xml",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/drawable/button_shape.xml"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/drawable/feedback_shape_orange.xml",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/drawable/feedback_shape_orange.xml"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/drawable/icon_menu.png",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/Inspection-release.aar/93ca269df6be8a66bcf5ae476a6fb1ff/res/drawable/icon_menu.png"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/drawable/icon_robotcontroller.png",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/Inspection-release.aar/93ca269df6be8a66bcf5ae476a6fb1ff/res/drawable/icon_robotcontroller.png"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/drawable/black_border.xml",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/Blocks-release.aar/997079183ddaf47c67355ed1cdbb5a52/res/drawable/black_border.xml"
+    }
+]

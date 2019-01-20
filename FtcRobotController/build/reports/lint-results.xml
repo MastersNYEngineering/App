@@ -14,7 +14,7 @@
         errorLine1="          mismatch = String.format(&quot;i: %d, byteArray[i]: %02x, cache[i]: %02x&quot;, i, byteArray[i], cache[i]);"
         errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptI2cAddressChange.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptI2cAddressChange.java"
             line="193"
             column="22"/>
     </issue>
@@ -32,7 +32,7 @@
         errorLine1="        return String.format(&quot;%.3f&quot;, rate);"
         errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorKLNavxMicro.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorKLNavxMicro.java"
             line="119"
             column="16"/>
     </issue>
@@ -50,7 +50,7 @@
         errorLine1="        return String.format(&quot;%.1f&quot;, AngleUnit.DEGREES.normalize(degrees));"
         errorLine2="               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorKLNavxMicro.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorKLNavxMicro.java"
             line="127"
             column="16"/>
     </issue>
@@ -68,7 +68,7 @@
         errorLine1="    return String.format(&quot;%d&quot;, rawValue);"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRGyro.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRGyro.java"
             line="151"
             column="12"/>
     </issue>
@@ -86,7 +86,7 @@
         errorLine1="    return String.format(&quot;%.3f&quot;, rate);"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRGyro.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRGyro.java"
             line="155"
             column="12"/>
     </issue>
@@ -104,7 +104,7 @@
         errorLine1="    return String.format(&quot;%.3f&quot;, rate);"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRGyro.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRGyro.java"
             line="159"
             column="12"/>
     </issue>
@@ -122,7 +122,7 @@
         errorLine1="            telemetry.addData(&quot;range&quot;, String.format(&quot;%.01f mm&quot;, sensorRange.getDistance(DistanceUnit.MM)));"
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorREV2mDistance.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorREV2mDistance.java"
             line="76"
             column="40"/>
     </issue>
@@ -140,7 +140,7 @@
         errorLine1="            telemetry.addData(&quot;range&quot;, String.format(&quot;%.01f cm&quot;, sensorRange.getDistance(DistanceUnit.CM)));"
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorREV2mDistance.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorREV2mDistance.java"
             line="77"
             column="40"/>
     </issue>
@@ -158,7 +158,7 @@
         errorLine1="            telemetry.addData(&quot;range&quot;, String.format(&quot;%.01f m&quot;, sensorRange.getDistance(DistanceUnit.METER)));"
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorREV2mDistance.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorREV2mDistance.java"
             line="78"
             column="40"/>
     </issue>
@@ -176,7 +176,7 @@
         errorLine1="            telemetry.addData(&quot;range&quot;, String.format(&quot;%.01f in&quot;, sensorRange.getDistance(DistanceUnit.INCH)));"
         errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorREV2mDistance.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorREV2mDistance.java"
             line="79"
             column="40"/>
     </issue>
@@ -195,7 +195,7 @@
         errorLine2="        ~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/build.gradle"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build.gradle"
             line="10"
             column="9"/>
     </issue>
@@ -213,7 +213,7 @@
         errorLine1="    private File goldFile   = new File(&quot;/sdcard&quot; + soundPath + &quot;/gold.wav&quot;);"
         errorLine2="                                       ~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptSoundsOnBotJava.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptSoundsOnBotJava.java"
             line="68"
             column="40"/>
     </issue>
@@ -231,7 +231,7 @@
         errorLine1="    private File silverFile = new File(&quot;/sdcard&quot; + soundPath + &quot;/silver.wav&quot;);"
         errorLine2="                                       ~~~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptSoundsOnBotJava.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptSoundsOnBotJava.java"
             line="69"
             column="40"/>
     </issue>
@@ -249,7 +249,7 @@
         errorLine1="    RobotLog.ii(TAG, &quot;410c serial number: &quot; + Build.SERIAL);"
         errorLine2="                                                    ~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java"
             line="446"
             column="53"/>
     </issue>
@@ -264,7 +264,7 @@
         explanation="Unused resources make applications larger and slow down builds."
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/raw/gold.wav"/>
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/raw/gold.wav"/>
     </issue>
 
     <issue
@@ -277,7 +277,7 @@
         explanation="Unused resources make applications larger and slow down builds."
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/raw/silver.wav"/>
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/raw/silver.wav"/>
     </issue>
 
     <issue
@@ -292,7 +292,7 @@
         errorLine2="                 ~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/values/strings.xml"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/values/strings.xml"
             line="60"
             column="18"/>
     </issue>
@@ -309,7 +309,7 @@
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/values/styles.xml"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/values/styles.xml"
             line="8"
             column="12"/>
     </issue>
@@ -326,7 +326,7 @@
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/values/styles.xml"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/values/styles.xml"
             line="11"
             column="12"/>
     </issue>
@@ -343,7 +343,7 @@
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/values/styles.xml"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/values/styles.xml"
             line="14"
             column="12"/>
     </issue>
@@ -360,7 +360,7 @@
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/values/styles.xml"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/values/styles.xml"
             line="17"
             column="12"/>
     </issue>
@@ -377,7 +377,7 @@
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/values/styles.xml"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/values/styles.xml"
             line="20"
             column="12"/>
     </issue>
@@ -393,7 +393,7 @@
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/drawable-hdpi"/>
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/drawable-hdpi"/>
     </issue>
 
     <issue
@@ -407,7 +407,7 @@
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/drawable-mdpi"/>
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/drawable-mdpi"/>
     </issue>
 
     <issue
@@ -421,7 +421,7 @@
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/drawable-xxhdpi"/>
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/drawable-xxhdpi"/>
     </issue>
 
     <issue
@@ -435,7 +435,7 @@
         errorLine1="    entireScreenLayout.setOnTouchListener(new View.OnTouchListener() {"
         errorLine2="    ^">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java"
             line="371"
             column="5"/>
     </issue>
@@ -451,7 +451,7 @@
         errorLine1="      public boolean onTouch(View v, MotionEvent event) {"
         errorLine2="                     ~~~~~~~">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java"
             line="373"
             column="22"/>
     </issue>
@@ -468,7 +468,7 @@
         errorLine2="    ^"
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/layout/activity_ftc_controller.xml"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/layout/activity_ftc_controller.xml"
             line="51"
             column="5"/>
     </issue>
@@ -485,7 +485,7 @@
         errorLine2="    ^"
         quickfix="studio">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/layout/activity_ftc_controller.xml"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/layout/activity_ftc_controller.xml"
             line="69"
             column="5"/>
     </issue>
@@ -501,7 +501,7 @@
         errorLine1="    &lt;TextView"
         errorLine2="    ^">
         <location
-            file="/Users/bolt/git/robotics/ftc_app/FtcRobotController/src/main/res/layout/activity_ftc_controller.xml"
+            file="/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/layout/activity_ftc_controller.xml"
             line="59"
             column="5"/>
     </issue>

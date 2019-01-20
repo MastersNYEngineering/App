@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/menu/menu_server.xml",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/Blocks-release.aar/997079183ddaf47c67355ed1cdbb5a52/res/menu/menu_server.xml"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/menu/main_menu.xml",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/Inspection-release.aar/93ca269df6be8a66bcf5ae476a6fb1ff/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/menu/ftc_robot_controller.xml",
+        "source": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/menu/ftc_robot_controller.xml"
+    }
+]

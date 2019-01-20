@@ -45,13 +45,13 @@ public class Control extends OpMode {
     public void start() {
         runtime.reset();
         init();
+        
     }
     
     @Override
     public void loop() {
         Drive();
         FunctionalityLoop();
-        
         telemetry.addData("Run Time", runtime.toString());
     }
     

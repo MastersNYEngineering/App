@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        }
+    ]
+}

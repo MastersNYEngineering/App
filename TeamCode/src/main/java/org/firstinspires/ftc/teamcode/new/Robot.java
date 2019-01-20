@@ -186,7 +186,7 @@ public class Robot {
                 lockArmPressed = false;
             } else if (lockArmPressed == false) {
                 if (currentPos < .1) {
-                    armLockServo.setPosition(.8);
+                    armLockServo.setPosition(.85);
                 }
                 lockArmPressed = true;
             }

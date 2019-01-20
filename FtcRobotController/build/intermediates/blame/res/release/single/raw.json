@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/gold.wav",
+        "source": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/raw/gold.wav"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/cube_mesh_vertex_shader.glsl",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/raw/cube_mesh_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/errormessage.wav",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/raw/errormessage.wav"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/chimedisconnect.wav",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/raw/chimedisconnect.wav"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/silver.wav",
+        "source": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/raw/silver.wav"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/texture_fragment_shader.glsl",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/raw/texture_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/nxtstartupsound.wav",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/raw/nxtstartupsound.wav"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/format_convert.bc",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/raw/format_convert.bc"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/color_fragment_shader.glsl",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/raw/color_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/texture_vertex_shader.glsl",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/raw/texture_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/warningmessage.wav",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/raw/warningmessage.wav"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/cube_mesh_fragment_shader.glsl",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/raw/cube_mesh_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/chimeconnect.wav",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/raw/chimeconnect.wav"
+    },
+    {
+        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/raw/simple_vertex_shader.glsl",
+        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/raw/simple_vertex_shader.glsl"
+    }
+]
