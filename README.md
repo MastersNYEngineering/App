@@ -30,3 +30,4 @@ To install the debug build to the phones
 ```./gradlew installDebugAndroidTest```
 <br>
 This also might require `sudo` (not 100% sure on this section just yet)
+

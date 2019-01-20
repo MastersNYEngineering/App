@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 #Sun Jan 20 09:43:07 EST 2019
 base.0=/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/TeamCode/build/intermediates/transforms/dexMerger/debug/0
 renamed.0=classes.dex
 path.0=classes.dex
+=======
+#Sun Jan 20 09:36:17 EST 2019
+base.0=/Users/bolt/git/robotics/App/TeamCode/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
+>>>>>>> bad8c5c4045845b8ce6fbbeec4dfae392463cf82

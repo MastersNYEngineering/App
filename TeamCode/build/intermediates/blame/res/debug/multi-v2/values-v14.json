@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/TeamCode/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
                     "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/values-v14/values-v14.xml",
+=======
+            "outputFile": "/Users/bolt/git/robotics/App/TeamCode/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/440f528b528000de88eda938f4c21f5d/res/values-v14/values-v14.xml",
+>>>>>>> bad8c5c4045845b8ce6fbbeec4dfae392463cf82
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
