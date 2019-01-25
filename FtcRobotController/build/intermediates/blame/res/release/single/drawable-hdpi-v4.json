@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/drawable-hdpi-v4/button_shape.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/drawable-hdpi-v4/button_shape.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/drawable-hdpi-v4/button_shape.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/drawable-hdpi-v4/button_shape.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_launcher.png",
-        "source": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/drawable-hdpi/ic_launcher.png"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/Users/bolt/git/robotics/App/FtcRobotController/src/main/res/drawable-hdpi/ic_launcher.png"
     }
 ]
