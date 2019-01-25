@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/values-v14/values-v14.xml",
+            "outputFile": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/values-v14/values-v14.xml",
+                    "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/440f528b528000de88eda938f4c21f5d/res/values-v14/values-v14.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -17,10 +17,10 @@
             ]
         },
         {
-            "outputFile": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v14/values-v14.xml",
+            "outputFile": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/values-v14/values-v14.xml",
+                    "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/440f528b528000de88eda938f4c21f5d/res/values-v14/values-v14.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

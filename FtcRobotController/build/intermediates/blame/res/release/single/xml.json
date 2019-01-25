@@ -1,58 +1,58 @@
 [
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/pushbotsens.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/pushbotsens.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/device_filter.xml",
+        "source": "/Users/bolt/git/robotics/App/FtcRobotController/src/main/res/xml/device_filter.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/app_settings.xml",
-        "source": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/xml/app_settings.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/builtinwebcamcalibrations.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/440f528b528000de88eda938f4c21f5d/res/xml/builtinwebcamcalibrations.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/k9usbbot.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/k9usbbot.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/app_settings.xml",
+        "source": "/Users/bolt/git/robotics/App/FtcRobotController/src/main/res/xml/app_settings.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/maxmodules.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/maxmodules.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/pushbot.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/pushbot.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/pushbot.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/pushbot.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/squarebot.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/squarebot.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/ftc_about_activity_rc.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/ftc_about_activity_rc.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/teamwebcamcalibrations.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/440f528b528000de88eda938f4c21f5d/res/xml/teamwebcamcalibrations.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/k9legacybot.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/k9legacybot.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/ftc_about_activity_rc.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/ftc_about_activity_rc.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/device_filter.xml",
-        "source": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/src/main/res/xml/device_filter.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/maxmodules.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/maxmodules.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/teamwebcamcalibrations.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/xml/teamwebcamcalibrations.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/rev_scoot.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/rev_scoot.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/advanced_rc_settings.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/advanced_rc_settings.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/k9legacybot.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/k9legacybot.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/rev_scoot.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/rev_scoot.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/ftc_about_activity.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/ftc_about_activity.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/ftc_about_activity.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/ftc_about_activity.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/advanced_rc_settings.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/advanced_rc_settings.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/builtinwebcamcalibrations.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/7c07207c7b8d7908bdf7af370d6408ae/res/xml/builtinwebcamcalibrations.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/k9usbbot.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/k9usbbot.xml"
     },
     {
-        "merged": "/Users/zanolon/Desktop/Code/GitHub/MastersNYEngineering/App/FtcRobotController/build/intermediates/res/merged/release/xml/squarebot.xml",
-        "source": "/Users/zanolon/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/4368fdd7a366e332680e1c483c8198c2/res/xml/squarebot.xml"
+        "merged": "/Users/bolt/git/robotics/App/FtcRobotController/build/intermediates/res/merged/release/xml/pushbotsens.xml",
+        "source": "/Users/bolt/.gradle/caches/transforms-1/files-1.1/FtcCommon-release.aar/abfebc839a250fa2c124621d3f2dec13/res/xml/pushbotsens.xml"
     }
 ]
