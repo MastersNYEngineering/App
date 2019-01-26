@@ -1,196 +1,346 @@
-// /*
-//     1. Unlock latch
-//     2. Rotate lift to lower bar
-//     3. Extend lift
-//     4. Unhook by driving right
-//     5. Retract arm
-//     6. Bring arm back down
-//     7. (other stuff)
-// */
+/*
+Copyright 2019 FIRST Tech Challenge Team 14479
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
+import com.qualcomm.robotcore.hardware.CRServo;
+import com.qualcomm.robotcore.hardware.Servo;
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
+import com.qualcomm.robotcore.util.ElapsedTime;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * This file contains an example of an iterative (Non-Linear) "OpMode".
+ * An OpMode is a 'program' that runs in either the autonomous or the teleop period of an FTC match.
+ * The names of OpModes appear on the menu of the FTC Driver Station.
+ * When an selection is made from the menu, the corresponding OpMode
+ * class is instantiated on the Robot Controller and executed.
+ *
+ * Remove a @Disabled the on the next line or two (if present) to add this opmode to the Driver Station OpMode list,
+ * or add a @Disabled annotation to prevent this OpMode from being added to the Driver Station
+ */
+@Autonomous
+
+public class Auto extends OpMode {
+    /* Declare OpMode members. */
+
+    static final double     COUNTS_PER_MOTOR_REV    = 1440 ;    // eg: TETRIX Motor Encoder
+    static final double     DRIVE_GEAR_REDUCTION    = 2.0 ;     // This is < 1.0 if geared UP
+    static final double     WHEEL_DIAMETER_INCHES   = 4.0 ;     // For figuring circumference
+    static final double     COUNTS_PER_INCH         = (COUNTS_PER_MOTOR_REV * DRIVE_GEAR_REDUCTION) /
+    (WHEEL_DIAMETER_INCHES * 3.1415);
+
+    String NAME_deploy_servo = "marker";
+    String NAME_claw = "claw";
+    String NAME_lift_rotate = "claw_rotate";
+    String NAME_lift_rotate_top = "claw_rotate_top";
+    String NAME_lift_0 = "drive_claw_left";
+    String NAME_lift_1 = "drive_claw_right";
+    String NAME_lock_arm = "arm_lock";
+
+    private ElapsedTime runtime = new ElapsedTime();
+    private DcMotor w0 = null;
+    private DcMotor w1 = null;
+    private DcMotor w2 = null;
+    private DcMotor w3 = null;
+
+    private DcMotor lift_rotate = null;
+    private DcMotor lift_rotate_top = null;
+    private CRServo lift_0 = null;
+    private CRServo lift_1 = null;
+
+    private Servo s_lift_0 = null;
+    private Servo s_lift_1 = null;
+    
+    private Servo deploy_servo = null;
+    private Servo claw = null;
+    private Servo lock_arm = null;
+    
+    private boolean open = false;
+    private double max_speed;
+
+    private DcMotor init_motor(String id) {
+        DcMotor m = null;
+        m = hardwareMap.get(DcMotor.class, id);
+        m.setMode(DcMotor.RunMode.RUN_USING_ENCODERS);
+        m.setDirection(DcMotor.Direction.REVERSE);
+        return m;
+    }
+
+    private Servo init_servo(String id) {
+        Servo s = null;
+        s = hardwareMap.get(Servo.class, id);
+        s.setDirection(Servo.Direction.FORWARD);
+        return s;
+    }
+    
+     private CRServo init_CRservo(String id) {
+        CRServo s = null;
+        s = hardwareMap.get(CRServo.class, id);
+        // s.setDirection(CRServo.Direction.FORWARD);
+        return s;
+    }
 
 
 
-// /* Copyright (c) 2017 FIRST. All rights reserved.
-//  *
-//  * Redistribution and use in source and binary forms, with or without modification,
-//  * are permitted (subject to the limitations in the disclaimer below) provided that
-//  * the following conditions are met:
-//  *
-//  * Redistributions of source code must retain the above copyright notice, this list
-//  * of conditions and the following disclaimer.
-//  *
-//  * Redistributions in binary form must reproduce the above copyright notice, this
-//  * list of conditions and the following disclaimer in the documentation and/or
-//  * other materials provided with the distribution.
-//  *
-//  * Neither the name of FIRST nor the names of its contributors may be used to endorse or
-//  * promote products derived from this software without specific prior written permission.
-//  *
-//  * NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY THIS
-//  * LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-//  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
-//  * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-//  * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
-//  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-//  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-//  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-//  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-//  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-//  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-//  */
 
-// package org.firstinspires.ftc.teamcode;
+    @Override
+    public void init() {
 
-// import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-// import com.qualcomm.robotcore.eventloop.opmode.Disabled;
-// import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-// import com.qualcomm.robotcore.hardware.DcMotor;
-// import com.qualcomm.robotcore.util.ElapsedTime;
+        max_speed = 0.3;
+        // max_speed = 0.125;
 
-// /**
-//  * This file illustrates the concept of driving a path based on encoder counts.
-//  * It uses the common Pushbot hardware class to define the drive on the robot.
-//  * The code is structured as a LinearOpMode
-//  *
-//  * The code REQUIRES that you DO have encoders on the wheels,
-//  *   otherwise you would use: PushbotAutoDriveByTime;
-//  *
-//  *  This code ALSO requires that the drive Motors have been configured such that a positive
-//  *  power command moves them forwards, and causes the encoders to count UP.
-//  *
-//  *   The desired path in this example is:
-//  *   - Drive forward for 48 inches
-//  *   - Spin right for 12 Inches
-//  *   - Drive Backwards for 24 inches
-//  *   - Stop and close the claw.
-//  *
-//  *  The code is written using a method called: encoderDrive(speed, leftInches, rightInches, timeoutS)
-//  *  that performs the actual movement.
-//  *  This methods assumes that each movement is relative to the last stopping place.
-//  *  There are other ways to perform encoder based moves, but this method is probably the simplest.
-//  *  This code uses the RUN_TO_POSITION mode to enable the Motor controllers to generate the run profile
-//  *
-//  * Use Android Studios to Copy this Class, and Paste it into your team's code folder with a new name.
-//  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
-//  */
+        w0 = init_motor("w0");
+        w1 = init_motor("w1");
+        w2 = init_motor("w2");
+        w3 = init_motor("w3");
 
-// @Autonomous(name="New auto code", group="Auto")
-// @Disabled
-// public class Auto extends LinearOpMode {
+        deploy_servo = init_servo(NAME_deploy_servo);
+        lift_rotate = init_motor(NAME_lift_rotate);
+        lift_rotate_top= init_motor(NAME_lift_rotate_top);
+        claw = init_servo(NAME_claw);
+        lift_0 = init_CRservo(NAME_lift_0);
+        lift_1 = init_CRservo(NAME_lift_1);
 
-//     /* Declare OpMode members. */
-//     HardwarePushbot         robot   = new HardwarePushbot();   // Use a Pushbot's hardware
-//     private ElapsedTime     runtime = new ElapsedTime();
+        // s_lift_0 = init_servo(NAME_lift_0);
+        // s_lift_1 = init_servo(NAME_lift_1);
 
-//     static final double     COUNTS_PER_MOTOR_REV    = 1440 ;    // eg: TETRIX Motor Encoder
-//     static final double     DRIVE_GEAR_REDUCTION    = 2.0 ;     // This is < 1.0 if geared UP
-//     static final double     WHEEL_DIAMETER_INCHES   = 4.0 ;     // For figuring circumference
-//     static final double     COUNTS_PER_INCH         = (COUNTS_PER_MOTOR_REV * DRIVE_GEAR_REDUCTION) /
-//                                                       (WHEEL_DIAMETER_INCHES * 3.1415);
-//     static final double     DRIVE_SPEED             = 0.6;
-//     static final double     TURN_SPEED              = 0.5;
 
-//     @Override
-//     public void runOpMode() {
+        lift_0=hardwareMap.crservo.get(NAME_lift_0);
+        lift_1=hardwareMap.crservo.get(NAME_lift_1);
+        lock_arm = init_servo(NAME_lock_arm);
 
-//         /*
-//          * Initialize the drive system variables.
-//          * The init() method of the hardware class does all the work here
-//          */
-//         robot.init(hardwareMap);
+        lock_arm.setPosition(0.0);
+        telemetry.addData("Status", "Initialized");
+        
+        
+        // reset encoders
+        w1.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        w3.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
-//         // Send telemetry message to signify robot waiting;
-//         telemetry.addData("Status", "Resetting Encoders");    //
-//         telemetry.update();
+        w1.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        w3.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-//         robot.leftDrive.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-//         robot.rightDrive.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
-//         robot.leftDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-//         robot.rightDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-//         // Send telemetry message to indicate successful Encoder reset
-//         telemetry.addData("Path0",  "Starting at %7d :%7d",
-//                           robot.leftDrive.getCurrentPosition(),
-//                           robot.rightDrive.getCurrentPosition());
-//         telemetry.update();
+    }
 
-//         // Wait for the game to start (driver presses PLAY)
-//         waitForStart();
+    /*
+     * Code to run REPEATEDLY after the driver hits INIT, but before they hit PLAY
+     */
+    @Override
+    public void init_loop() {
+    }
+    
+    void rack_and_pinion_down() {
+        try {
+            long t= System.currentTimeMillis();
+            long end = t+500;
+            while(System.currentTimeMillis() < end) {
+              lift_0.setPower(-.5);
+               lift_1.setPower(-.5);
+              // pause to avoid churning
+              Thread.sleep( 2 );
+            }
+            
+        }
+        catch (Exception e) {
+            
+        }
 
-//         // Step through each leg of the path,
-//         // Note: Reverse movement is obtained by setting a negative distance (not speed)
-//         encoderDrive(DRIVE_SPEED,  48,  48, 5.0);  // S1: Forward 47 Inches with 5 Sec timeout
-//         encoderDrive(TURN_SPEED,   12, -12, 4.0);  // S2: Turn Right 12 Inches with 4 Sec timeout
-//         encoderDrive(DRIVE_SPEED, -24, -24, 4.0);  // S3: Reverse 24 Inches with 4 Sec timeout
+    }
+    
+        void drive_forward() {
+        try {
+            long t= System.currentTimeMillis();
+            long end = t+1000;
+            while(System.currentTimeMillis() < end) {
+              w1.setPower(1);
+                 w3.setPower(1);
+              // pause to avoid churning
+              Thread.sleep( 2 );
+            }
+            
+        }
+        catch (Exception e) {
+            
+        }
+        w1.setPower(0);
+                 w3.setPower(0);
 
-//         robot.leftClaw.setPosition(1.0);            // S4: Stop and close the claw.
-//         robot.rightClaw.setPosition(0.0);
-//         sleep(1000);     // pause for servos to move
+    }
+    
+    
+    void wait5() {
+        try {
+            long t= System.currentTimeMillis();
+            long end = t+2000;
+            while(System.currentTimeMillis() < end) {
+            //   w1.setPower(1);
+            //      w3.setPower(1);
+              // pause to avoid churning
+              Thread.sleep( 2 );
+            }
+            t = 0;
+            
+            
+        }
+        catch (Exception e) {
+               
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public void encoderDrive(double speed,
+                             double leftInches, double rightInches,
+                             double timeoutS) {
+        int newLeftTarget;
+        int newRightTarget;
 
-//         telemetry.addData("Path", "Complete");
-//         telemetry.update();
-//     }
+        // Ensure that the opmode is still active
+        // if (opModeIsActive()) {
 
-//     /*
-//      *  Method to perfmorm a relative move, based on encoder counts.
-//      *  Encoders are not reset as the move is based on the current position.
-//      *  Move will stop if any of three conditions occur:
-//      *  1) Move gets to the desired position
-//      *  2) Move runs out of time
-//      *  3) Driver stops the opmode running.
-//      */
-//     public void encoderDrive(double speed,
-//                              double leftInches, double rightInches,
-//                              double timeoutS) {
-//         int newLeftTarget;
-//         int newRightTarget;
+            // Determine new target position, and pass to motor controller
+            newLeftTarget = w1.getCurrentPosition() + (int)(leftInches * COUNTS_PER_INCH);
+            newRightTarget = w3.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
+            w1.setTargetPosition(newLeftTarget);
+            w3.setTargetPosition(newRightTarget);
 
-//         // Ensure that the opmode is still active
-//         if (opModeIsActive()) {
+            // Turn On RUN_TO_POSITION
+            w1.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+            w3.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
-//             // Determine new target position, and pass to motor controller
-//             newLeftTarget = robot.leftDrive.getCurrentPosition() + (int)(leftInches * COUNTS_PER_INCH);
-//             newRightTarget = robot.rightDrive.getCurrentPosition() + (int)(rightInches * COUNTS_PER_INCH);
-//             robot.leftDrive.setTargetPosition(newLeftTarget);
-//             robot.rightDrive.setTargetPosition(newRightTarget);
+            // reset the timeout time and start motion.
+            runtime.reset();
+            w1.setPower(Math.abs(speed));
+            w3.setPower(Math.abs(speed));
 
-//             // Turn On RUN_TO_POSITION
-//             robot.leftDrive.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-//             robot.rightDrive.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+            // keep looping while we are still active, and there is time left, and both motors are running.
+            // Note: We use (isBusy() && isBusy()) in the loop test, which means that when EITHER motor hits
+            // its target position, the motion will stop.  This is "safer" in the event that the robot will
+            // always end the motion as soon as possible.
+            // However, if you require that BOTH motors have finished their moves before the robot continues
+            // onto the next step, use (isBusy() || isBusy()) in the loop test.
+            while ((runtime.seconds() < timeoutS) && (w1.isBusy() && w3.isBusy())) {
 
-//             // reset the timeout time and start motion.
-//             runtime.reset();
-//             robot.leftDrive.setPower(Math.abs(speed));
-//             robot.rightDrive.setPower(Math.abs(speed));
+                // Display it for the driver.
+                telemetry.addData("Path1",  "Running to %7d :%7d", newLeftTarget,  newRightTarget);
+                telemetry.addData("Path2",  "Running at %7d :%7d",
+                                            w1.getCurrentPosition(),
+                                            w3.getCurrentPosition());
+                telemetry.update();
+            }
 
-//             // keep looping while we are still active, and there is time left, and both motors are running.
-//             // Note: We use (isBusy() && isBusy()) in the loop test, which means that when EITHER motor hits
-//             // its target position, the motion will stop.  This is "safer" in the event that the robot will
-//             // always end the motion as soon as possible.
-//             // However, if you require that BOTH motors have finished their moves before the robot continues
-//             // onto the next step, use (isBusy() || isBusy()) in the loop test.
-//             while (opModeIsActive() &&
-//                    (runtime.seconds() < timeoutS) &&
-//                    (robot.leftDrive.isBusy() && robot.rightDrive.isBusy())) {
+            // Stop all motion;
+            w1.setPower(0);
+            w3.setPower(0);
 
-//                 // Display it for the driver.
-//                 telemetry.addData("Path1",  "Running to %7d :%7d", newLeftTarget,  newRightTarget);
-//                 telemetry.addData("Path2",  "Running at %7d :%7d",
-//                                             robot.leftDrive.getCurrentPosition(),
-//                                             robot.rightDrive.getCurrentPosition());
-//                 telemetry.update();
-//             }
+            // Turn off RUN_TO_POSITION
+            w1.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+            w3.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-//             // Stop all motion;
-//             robot.leftDrive.setPower(0);
-//             robot.rightDrive.setPower(0);
+            //  sleep(250);   // optional pause after each move
+        // }
+    }
+    
+    
+    
+    
+    
+    
+    
 
-//             // Turn off RUN_TO_POSITION
-//             robot.leftDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-//             robot.rightDrive.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+    /*
+     * Code to run ONCE when the driver hits PLAY
+     */
+    @Override
+    public void start() {
+        lock_arm.setPosition(0.7);
+        // time.sleep()
+        // sleep(3000);
 
-//             //  sleep(250);   // optional pause after each move
-//         }
-//     }
-// }
+        
+        // rack_and_pinion_down();
+        // sleep(3000);
+        
+        // drive_forward();
+        // sleep(3000);
+
+        double TURN_SPEED = 0.3;
+        encoderDrive(TURN_SPEED,   6, -6, 4.0);  // S2: Turn Right 12 Inches with 4 Sec timeout
+        
+        deploy_servo.setPosition(0);
+        
+        // time.sleep()
+        
+        
+        
+
+
+    }
+
+                    public static void sleep(long sleepTime)
+                {
+                    long wakeupTime = System.currentTimeMillis() + sleepTime;
+
+                    while (sleepTime > 0)
+                    {
+                        try
+                {
+                            Thread.sleep(sleepTime);
+                        }
+                        catch (InterruptedException e)
+                        {
+                        }
+                        sleepTime = wakeupTime - System.currentTimeMillis();
+                    }
+                }   //sleep
+
+    /*
+     * Code to run REPEATEDLY after the driver hits PLAY but before they hit STOP
+     */
+    @Override
+    public void loop() {
+
+
+    }
+
+    /*
+     * Code to run ONCE after the driver hits STOP
+     */
+    @Override
+    public void stop() {
+
+    }
+}
