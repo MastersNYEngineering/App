@@ -186,6 +186,7 @@ public class Auto extends OpMode {
         }
 
         // lock_arm.setPosition(0.7);
+        // rack_and_pinion_down()
         // encoderDrive(TURN_SPEED, 6, -6, 4.0);
         // deploy_servo.setPosition(0);
     }
