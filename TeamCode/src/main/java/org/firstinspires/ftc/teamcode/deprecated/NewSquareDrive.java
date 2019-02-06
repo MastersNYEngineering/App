@@ -54,7 +54,7 @@ public class NewSquareDrive extends OpMode {
     
     private boolean open = false;
     private double max_speed;
-
+    double ultimatespeed = 0;
     private DcMotor init_motor(String id) {
         DcMotor m = null;
         m = hardwareMap.get(DcMotor.class, id);
@@ -154,46 +154,74 @@ public class NewSquareDrive extends OpMode {
         return -speed;
     }
     
-    boolean marker_bool = false;
+    // boolean marker_bool = false;
+    // void deploy_marker() {
+    //     double current_position = deploy_servo.getPosition();
+    //     telemetry.addData("servo position",current_position);
+    //     if (gamepad1.x) {
+    //         if (marker_bool == true) {
+    //             if (current_position >= 0) {
+    //                 deploy_servo.setPosition(0);
+    //             }
+    //             marker_bool = false;
+    //         } else if (marker_bool == false) {
+    //             if (current_position <= 0) {
+    //                 deploy_servo.setPosition(.5);
+    //             }
+    //             marker_bool = true;
+    //         }
+            
+    //     }
+    // }
+    
+    boolean thing2 = false;
     void deploy_marker() {
-        double current_position = deploy_servo.getPosition();
-        telemetry.addData("servo position",current_position);
-        if (gamepad1.x) {
-            if (marker_bool == true) {
-                if (current_position >= 0) {
-                    deploy_servo.setPosition(0);
-                }
-                marker_bool = false;
-            } else if (marker_bool == false) {
-                if (current_position <= 0) {
-                    deploy_servo.setPosition(.5);
-                }
-                marker_bool = true;
-            }
-            
+        if (gamepad1.dpad_up && thing2 == false) {
+            telemetry.addData("d up rrrrrrrrr", "pressed");
+            deploy_servo.setPosition(.1);
+            thing2 = true;
+        } else if (gamepad1.dpad_down == true && thing2==true) {
+            deploy_servo.setPosition(0.6);
+            thing2 = false;
         }
+        
+        
     }
+    
 
-    boolean arm_func_bool = false;
-    void lock_arm_func() {
-        double current_position = lock_arm.getPosition();
-        telemetry.addData("ARM LOCK POSITION", current_position);
-        if (gamepad1.y) {
-            telemetry.addData("y button", "pressed");
-            if (arm_func_bool == true) {
-                if (current_position >.1) {
-                    lock_arm.setPosition(0.0);
-                }
-                arm_func_bool = false;
-            } else if (arm_func_bool == false) {
-                telemetry.addData("bla", "blahhhhh");
-                if (current_position < .1) {
-                    lock_arm.setPosition(.8);
-                }
-                arm_func_bool = true;
-            }
+    // boolean arm_func_bool = false;
+    // void lock_arm_func() {
+    //     double current_position = lock_arm.getPosition();
+    //     telemetry.addData("ARM LOCK POSITION", current_position);
+    //     if (gamepad1.y) {
+    //         telemetry.addData("y button", "pressed");
+    //         if (arm_func_bool == true) {
+    //             if (current_position >.1) {
+    //                 lock_arm.setPosition(0.0);
+    //             }
+    //             arm_func_bool = false;
+    //         } else if (arm_func_bool == false) {
+    //             telemetry.addData("bla", "blahhhhh");
+    //             if (current_position < .1) {
+    //                 lock_arm.setPosition(ultimatespeed);
+    //             }
+    //             arm_func_bool = true;
+    //         }
             
+    //     }
+    // }
+    boolean thing = false;
+    void lock_arm_func() {
+        if (gamepad1.dpad_right && thing == false) {
+            telemetry.addData("d right rrrrrrrrr", "pressed");
+            lock_arm.setPosition(0.7);
+            thing = true;
+        } else if (gamepad1.dpad_left == true && thing==true) {
+            lock_arm.setPosition(0);
+            thing = false;
         }
+        
+        
     }
 
     void move_claw() {
@@ -264,7 +292,7 @@ public class NewSquareDrive extends OpMode {
     @Override
     public void start() {
         // deploy_servo.setPosition(0);
-        lock_arm.setPosition(.8);
+        lock_arm.setPosition(0);
         
         runtime.reset();
         init();
@@ -279,7 +307,6 @@ public class NewSquareDrive extends OpMode {
         w1.setPower(move[1] + turn);
         w2.setPower(move[2] + turn);
         w3.setPower(move[3] + turn);
-        
         deploy_marker();
         rotate_lift();
         move_claw();
@@ -287,7 +314,7 @@ public class NewSquareDrive extends OpMode {
         drive_lift();
         telemetry.addData("thingerino", lock_arm.getPosition());
         telemetry.addData("SERVO", deploy_servo.getPosition());
-        telemetry.addData("rrrrrr", claw.getPosition());
+        telemetry.addData("claw position", claw.getPosition());
         telemetry.addData("Run Time", runtime.toString());
     }
 
